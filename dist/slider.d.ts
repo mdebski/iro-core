@@ -1,11 +1,12 @@
 import { IroColor } from './color';
 import { CssGradientStops } from './css';
 import { IroColorPickerOptions } from './colorPickerOptions';
-export declare type SliderShape = 'bar' | 'circle' | '';
+export declare type SliderShape = 'bar' | 'circle' | 'flat' | '';
 export declare type SliderType = 'red' | 'green' | 'blue' | 'alpha' | 'hue' | 'saturation' | 'value' | 'kelvin' | '';
 export interface SliderOptions extends IroColorPickerOptions {
     color: IroColor;
     sliderShape: SliderShape;
+    shapeRadius: number;
     sliderType: SliderType;
     minTemperature: number;
     maxTemperature: number;
